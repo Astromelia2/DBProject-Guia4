@@ -130,7 +130,7 @@ public class MonitorDAO {
         }
     }
 
-    public void eliminarProveedor(int id) {
+    public void eliminarMonitor(int id) {
         String consulta = "DELETE FROM monitores where id='" + id + "'";
         try {
             con = Conexion.getConexion();

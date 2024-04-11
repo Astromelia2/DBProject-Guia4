@@ -105,7 +105,7 @@ public class GestorMonitor implements ActionListener {
                 }
             }
         }
-        // Agregar proveedor
+        // Agregar Monitor
         if (e.getSource() == this.vista.btnCrear) {
             vista.txtId.setEditable(true);
             listaMonitores = miMonitorDAO.listaDeMonitores();
@@ -158,7 +158,7 @@ public class GestorMonitor implements ActionListener {
                 }
             }
         }
-        // Eliminar proveedor
+        // Eliminar Monitor
         if (e.getSource() == this.vista.btnEliminar) {
             vista.txtId.setEditable(true);
             listaMonitores = miMonitorDAO.listaDeMonitores();
@@ -166,7 +166,7 @@ public class GestorMonitor implements ActionListener {
             for (MonitorVO objMonitor : miMonitorDAO.listaDeMonitores()) {
                 if (objMonitor.getNombre().equals(nombre)) {
                     int Id = objMonitor.getId();
-                    this.miMonitorDAO.eliminarProveedor(Id);
+                    this.miMonitorDAO.eliminarMonitor(Id);
                     this.vista.msg("MONITOR ELIMINADO");
                     this.vista.limpiar();
                     llenarCombo();

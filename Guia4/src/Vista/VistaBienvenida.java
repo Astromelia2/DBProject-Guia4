@@ -13,7 +13,7 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author juanp
+ * @author ftovarp
  */
 public class VistaBienvenida extends javax.swing.JFrame {
 

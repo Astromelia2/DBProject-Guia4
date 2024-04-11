@@ -153,7 +153,7 @@ public class GestorInstructor implements ActionListener {
             for (InstructorVO objInstructor : miInstructorDAO.listaDeInstructores()) {
                 if (objInstructor.getNombre().equals(nombre)) {
                     int Id = objInstructor.getId();
-                    this.miInstructorDAO.eliminarProveedor(Id);
+                    this.miInstructorDAO.eliminarInstructor(Id);
                     this.vista.msg("INSTRUCTOR ELIMINADO");
                     this.vista.limpiar();
                     llenarCombo();

@@ -128,7 +128,7 @@ public class InstructorDAO {
             vista.errorConsola("HUBO UN ERROR DURANTE LA INSERCION");
         }
     }
-    public void eliminarProveedor(int id) {
+    public void eliminarInstructor(int id) {
         String consulta = "DELETE FROM instructores where id='" + id + "'";
         try {
             con = Conexion.getConexion();
